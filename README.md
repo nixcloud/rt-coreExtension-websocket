@@ -2,7 +2,13 @@
 
 this coreExtension is not a normal rt-extension as it extends request tracker 4.2.12+ with websockets by using mojolicious lite.
 
+![A screenshot featuring the Kanban view with WebSocket status](https://raw.githubusercontent.com/nixcloud/rt-coreExtension-websocket/master/internals-and-setup.png)
+
 it is intended that this mojo based webserver is run behind a reverse proxy which mapps '/websocket' into RT's '/'. 
+
+you probably want to use this along with:
+
+* <https://github.com/nixcloud/rt-extension-kanban>
 
 # authentication 
 
