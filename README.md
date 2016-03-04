@@ -95,7 +95,7 @@ this codebase is licensed AGPL v3
 # thanks
 
 * [LiHAS stuttgart](http://www.lihas.de/) for sponsoring this work
-* [Matt S. Trout](http://shadow.cat/blog/matt-s-trout/) for his help getting `plackup/twiggy with AnyEvent` stuff working and then convincing me to rewrite it using `Mojolicious light`
+* [Matt S. Trout](http://shadow.cat/blog/matt-s-trout/) for his help getting `plackup/twiggy with AnyEvent` stuff working and then convincing us to rewrite it using `Mojolicious light`
 
 # authors
 
