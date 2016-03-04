@@ -192,8 +192,8 @@ __DATA__
         };
     
         ws.onmessage = function (msg) {
-          var res = JSON.parse(msg.data);
-          log(res.text);
+          var res = msg.data;
+          log(res);
         };
         ws.onclose = function (msg) {
           log('Connection closed'); 
