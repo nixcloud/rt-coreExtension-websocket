@@ -54,8 +54,6 @@ $redis->on(message => sub {
   # A: ticket updates are monitored by introspecting the sub _Set() function
   #    which can easily span 4 events in a timeframe of 200ms.
   #    this codes converts this into just one event!
-
-
   if (defined $cbs{$message}) {
     Mojo::IOLoop->remove($cbs{$message});
   }
