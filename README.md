@@ -16,7 +16,7 @@ the implementation is this:
 
 1. a client logges into RT
 2. inside RT a `mason template like Kanban` might use websockets
-3. the ws open call will go to wss://whatever.com/websocket
+3. the ws open call will go to wss://example.com/rt/websocket
 4. the reverse proxy will map /websocket to the mojo lite webserver
 5. but since the client provided his cookies to /websocket also we can use these to check if there is a session already
 6. if so we let the browser establish a WS, else we reject 
@@ -40,7 +40,20 @@ SECURITY: without `-m production` it a stacktrace will be printed to the client!
 
 # testing the daemon
 
-    redis-cli PUBLISH rt-ticket-activity "hello world";
+    redis-cli PUBLISH rt-ticket-activity 123
+
+# dependencies
+
+* perl 5.2.20
+* Mojolicious-6.50
+* Mojo-Redis2-0.24
+ 
+javascript:
+
+* https://github.com/joewalnes/reconnecting-websocket MIT licensed (bundled into index.html template)
+
+# license
+
 
 
 # authors
