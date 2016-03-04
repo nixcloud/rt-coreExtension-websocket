@@ -46,7 +46,7 @@ the implementation is this:
 once a WS context is established, it will last until the client disconnects. session is only checked on connection establishment.
 
 ## event normalization
-when this coreExtension is used with (rt-extension-kanban)[https://github.com/nixcloud/rt-extension-kanban] there is a slight problem with the amount of generated events.
+when this coreExtension is used with [rt-extension-kanban](https://github.com/nixcloud/rt-extension-kanban) there is a slight problem with the amount of generated events.
 
 if one creates a ticket it will generate 3 events, one for `sub Create()` and two internal `sub _Set()` events. however, their timeframe is less than 300ms and this implementation features event normalization with a maximum time of 200ms between to similar events (same ticket ID).
 
