@@ -31,6 +31,16 @@ SECURITY: without `-m production` it a stacktrace will be printed to the client!
 
 
 # internals
+
+## reverse proxy setup
+
+if you have your 'request tracker' running as 'example.com/rt' then this would be the reverse proxy configuration for `apache`:
+
+    ProxyRequests  Off
+    <Location "/rt/websocket">
+      ProxyPass "ws://localhost:5000/websocket/" retry=0
+    </Location>
+
 ## authentication 
 
 the implementation is this:
