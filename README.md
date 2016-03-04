@@ -23,7 +23,7 @@ start the daemon:
 
     MOJO_CONFIG=/path/to/rt-coreExtension-websocket.conf perl rt-coreExtension-websocket.pl daemon  -l http://*:5000
   
-SECURITY: without `-m production` it a stacktrace will be printed to the client!
+SECURITY: without `-m production`  stacktrace(s) will be passed to the client browser!
 
 # testing the daemon
 
