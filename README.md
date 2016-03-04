@@ -70,7 +70,7 @@ javascript:
 
 # license
 
-
+this codebase is licensed AGPL v3
 
 # authors
 
