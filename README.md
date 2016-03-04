@@ -78,6 +78,8 @@ will be merged into one `id 1` event **generating less load in the UI**.
 
 # dependencies
 
+perl: 
+
 * perl 5.2.20
 * Mojolicious-6.50
 * Mojo-Redis2-0.24
@@ -89,6 +91,11 @@ javascript:
 # license
 
 this codebase is licensed AGPL v3
+
+# thanks
+
+* [LiHAS stuttgart](http://www.lihas.de/) for sponsoring this work
+* [Matt S. Trout](http://shadow.cat/blog/matt-s-trout/) for his help getting `plackup/twiggy with AnyEvent` stuff working and then convincing me to rewrite it using `Mojolicious light`
 
 # authors
 
