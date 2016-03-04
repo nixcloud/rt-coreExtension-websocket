@@ -32,7 +32,11 @@ SECURITY: without `-m production` it a stacktrace will be printed to the client!
 
 # internals
 
-## reverse proxy setup
+## apache reverse proxy setup
+
+you need to activate `proxy_wstunnel` module for apache:
+
+    a2enmod proxy_wstunnel
 
 if you have your 'request tracker' running as 'example.com/rt' then this would be the reverse proxy configuration for `apache`:
 
@@ -40,6 +44,10 @@ if you have your 'request tracker' running as 'example.com/rt' then this would b
     <Location "/rt/websocket">
       ProxyPass "ws://localhost:5000/websocket/" retry=0
     </Location>
+
+afterwards restart apache:
+
+    service apache restart
 
 ## authentication 
 
